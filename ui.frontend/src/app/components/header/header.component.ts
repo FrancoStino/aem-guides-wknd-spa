@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
       const rootNavigationLink: NavigationLink = new NavigationLink(this.items[0]);
       this.isHome = rootNavigationLink.path === this.route.snapshot.data.path;
       this.homePageUrl = rootNavigationLink.url;
-  }
+    }
   }
 
   onBackClick() {

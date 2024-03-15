@@ -3,7 +3,7 @@
 </ul>
 
 <ng-template #recursiveListTmpl let-links="links">
-    <li *ngFor="let link of links" class="{{'navigation__item navigation__item--' + link.level}}">
+    <li *ngFor="let link of links" class="{{'navigation__item naviation__item--' + link.level}}">
         <a [routerLink]="link.url" class="navigation__item-link" [title]="link.title" [attr.aria-current]="link.active">
             {{link.title}}
         </a>
